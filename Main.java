@@ -6,10 +6,14 @@ public class Main {
         System.out.println("do I like video games?: " + Likes("video games"));
         Anime best = new Anime();
         Anime Anime2 = new Anime("Demon Slayer", "Haruo Sotozaki", 10);
+        Anime Anime3 = new Anime();
         best.setTitle("Demon Slayer");
         best.setDirector("Haruo Sotozaki");
         best.setRating(10);
         System.out.println("My favorite anime is " + best.getTitle());
+        System.out.print("toString test: " + best.toString());
+        System.out.print("\nequals test: " + best.equals(Anime2));
+        System.out.print("\nDefult Contructor Test: " + Anime3.toString());
     }
 
     public static void Printinfo() {
