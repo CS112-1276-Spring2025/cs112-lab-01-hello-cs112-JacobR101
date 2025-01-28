@@ -5,6 +5,7 @@ public class Main {
         Printinfo();
         System.out.println("do I like video games?: " + Likes("video games"));
         Anime best = new Anime();
+        Anime Anime2 = new Anime("Demon Slayer", "Haruo Sotozaki", 10);
         best.setTitle("Demon Slayer");
         best.setDirector("Haruo Sotozaki");
         best.setRating(10);

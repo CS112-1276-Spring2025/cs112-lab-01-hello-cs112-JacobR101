@@ -9,7 +9,11 @@ public class Anime {
         this.setTitle(title);
         this.setRating(rating);
     }
-    
+    public Anime() {
+        this.setDirector("");
+        this.setTitle("");
+        this.setRating(0);
+    }
     public void setTitle(String title) {
         this.title = title;
     }
@@ -36,12 +40,20 @@ public class Anime {
     public int getRating() {
         return rating;
         }
-    public String toString() {
+
+        public String toString() {
             return "Anime{" +
-                   "title='" + title + '\'' +
-                   ", director='" + director + '\'' +
-                   ", rating=" + rating +
-                   '}';
+                    "title='" + title + '\'' +
+                    ", director='" + director + '\'' +
+                    ", rating=" + rating +
+                    '}';
         }
+
+        public boolean equals(Anime other) {
+        return(this.director.equals(other.director) &&
+            this.rating == other.rating &&
+                this.title.equals(other.title)
+        );
+    }
     }
 
