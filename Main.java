@@ -14,6 +14,7 @@ public class Main {
         System.out.print("toString test: " + best.toString());
         System.out.print("\nequals test: " + best.equals(Anime2));
         System.out.print("\nDefult Contructor Test: " + Anime3.toString());
+        System.out.println("Hola");
     }
 
     public static void Printinfo() {
