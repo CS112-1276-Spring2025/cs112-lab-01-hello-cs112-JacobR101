@@ -1,6 +1,7 @@
 public class Main {
     
     public static void main(String[] args) {
+        System.out.println("Change");
         System.out.println("Hello world! from Jacob");
         Printinfo();
         System.out.println("do I like video games?: " + Likes("video games"));
@@ -23,6 +24,7 @@ public class Main {
     public static boolean Likes(String check){
      String Mylikes =   "I enjoy playing video games, scrolling on instagram, and going out with my friends";
      return(Mylikes.contains(check));
+
 
     }
     }
